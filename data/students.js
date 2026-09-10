@@ -9,26 +9,26 @@
 
 const SEED_STUDENTS = {
   // 19 de junio — lecciones 1 y 2
-  "Gabriela Orellana": [1, 2, 9, 10, 17, 18, 19],
+  "Gabriela Orellana": [1, 2, 9, 10, 17, 18, 19, 23, 24, 25],
   "Julia Gomez": [1, 2, 3, 4],
-  "Luis Coyoy": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 17, 18, 19],
+  "Luis Coyoy": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 17, 18, 19, 23, 24, 25],
   "Mia Orellana": [1, 2, 3, 4, 17, 18, 19],
-  "Yasmin Lorenzo": [1, 2, 3, 4, 5, 6, 7, 8, 11, 12, 15, 16, 17, 18, 19],
+  "Yasmin Lorenzo": [1, 2, 3, 4, 5, 6, 7, 8, 11, 12, 15, 16, 17, 18, 19, 23, 24, 25],
 
   // 26 de junio — lecciones 3 y 4
   "Camila Orellana": [3, 4],
-  "Alisson Lorenzo": [3, 4, 5, 6, 7, 8, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22],
-  "Saida Monroy": [3, 4, 5, 6, 7, 8, 11, 12, 15, 16],
+  "Alisson Lorenzo": [3, 4, 5, 6, 7, 8, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25],
+  "Saida Monroy": [3, 4, 5, 6, 7, 8, 11, 12, 15, 16, 23, 24, 25],
   "Elder Osorio": [3, 4],
-  "Hassen Pinto": [3, 4, 5, 6, 7, 8, 11, 12, 15, 16],
+  "Hassen Pinto": [3, 4, 5, 6, 7, 8, 11, 12, 15, 16, 23, 24, 25],
   "Emanuel Ramirez": [3, 4],
   "Axel Lorenzo": [3, 4, 15, 16],
-  "Fredy Ramirez": [3, 4, 5, 6, 7, 8, 11, 12, 17, 18, 19, 20, 21, 22],
+  "Fredy Ramirez": [3, 4, 5, 6, 7, 8, 11, 12, 17, 18, 19, 20, 21, 22, 23, 24, 25],
   "Rafael Choy": [3, 4],
   "Dayli Rojcho": [3, 4],
   "Telma Choc": [3, 4, 7, 8],
   "Kevin Choc": [3, 4, 7, 8],
-  "Jose Ramirez": [3, 4, 5, 6, 7, 8, 11, 12],
+  "Jose Ramirez": [3, 4, 5, 6, 7, 8, 11, 12, 23, 24, 25],
   "Miriam Coyoy": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 15, 16, 17, 18, 19],
 
   // 3 de julio — lecciones 5 y 6
@@ -51,9 +51,9 @@ const SEED_STUDENTS = {
   "Leonardo Pineda": [7, 8],
 
   // 17 de julio — lecciones 9 y 10
-  "Fernando Tacam": [9, 10, 17, 18, 19],
+  "Fernando Tacam": [9, 10, 17, 18, 19, 23, 24, 25],
   "Edwin Otoniel": [9, 10, 11, 12, 17, 18, 19], // solo un nombre legible en el cuaderno
-  "Lilibeth Marroquin": [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22],
+  "Lilibeth Marroquin": [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25],
 
   // 24 de julio — lecciones 11 y 12
   "Carlos Pelico": [11, 12],
@@ -61,15 +61,15 @@ const SEED_STUDENTS = {
   // 14 de agosto — lecciones 20 a 22 (solo entregaron 3 alumnos)
 
   // 7 de agosto — lecciones 15 y 16
-  "Hania Cacatzi": [15, 16],
+  "Hania Cacatzi": [15, 16, 23, 24, 25],
   "Marisol Guarcas": [15, 16],
-  "Paola Lopez": [15, 16, 17, 18, 19],
-  "Hugo Rojche": [15, 16],
+  "Paola Lopez": [15, 16, 17, 18, 19, 23, 24, 25],
+  "Hugo Rojche": [15, 16, 23, 24, 25],
   "Jefry Cubur": [15, 16],
   "Josue Perez": [15, 16],
   "Alejandro Mayca": [15, 16],
   "Byron Alarcon": [15, 16],
-  "Henry Pich": [15, 16],
+  "Henry Pich": [15, 16, 23, 24, 25],
   "Londy Cuca": [15, 16],
   "Audri Santizo": [15, 16], // primer nombre poco legible, confirmar
   "Anllelo Lorenzo": [15, 16, 17, 18, 19],
@@ -94,4 +94,15 @@ const SEED_STUDENTS = {
   "Jasmin Gisimit": [17, 18, 19], // apellido poco legible, confirmar
   "Marlon Sipac": [17, 18, 19],
   "Erik Chuy": [17, 18, 19],
+
+  // 28 de agosto — lecciones 23, 24 y 25
+  "Moroni Salgado": [23, 24, 25],
+  "Alvin Alonzo": [23, 24, 25],
+  "Anderson Cujcuj": [23, 24, 25],
+  "Jordy Cua": [23, 24, 25],
+  "Jimmy Rojche": [23, 24, 25],
+  "Perla Us": [23, 24, 25],
+  "Gadiel Gonzales": [23, 24, 25],
+  "Abel de Leon": [23, 24, 25],
+  "William Escobar": [23, 24, 25],
 };
