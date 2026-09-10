@@ -32,7 +32,7 @@ const SEED_STUDENTS = {
   "Miriam Coyoy": [3, 4, 5, 6],
 
   // 3 de julio — lecciones 5 y 6
-  "Mariano Jimenez": [5, 6], // nombre poco legible en el cuaderno, confirmar
+  "Melany Jimenez": [5, 6], 
   "Alexander Boc": [5, 6],
   "Nefertiti Cua": [5, 6],
   "Harry Cua": [5, 6],
