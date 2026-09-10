@@ -22,7 +22,7 @@
         <span class="logo-badge__bottom">CHIMALTENANGO</span>
       </div>
       <div class="hero__text">
-        <p class="hero__eyebrow">Seminario · Curso</p>
+        <p class="hero__eyebrow">Instituto · Curso</p>
         <h1>La Familia Eterna</h1>
         <p class="hero__sub">Control de lecciones y asistencia de alumnos</p>
       </div>
@@ -30,8 +30,7 @@
   </header>
 
   <nav class="tabs" role="tablist">
-    <button class="tab active" data-tab="pendientes">Pendientes</button>
-    <button class="tab" data-tab="asistencia">Asistencia</button>
+    <button class="tab active" data-tab="pendientes">Buscar alumno</button>
     <button class="tab" data-tab="calendario">Calendario</button>
   </nav>
 
@@ -40,45 +39,12 @@
     <!-- PENDIENTES -->
     <section id="tab-pendientes" class="panel active">
       <div class="toolbar">
-        <input type="search" id="search-alumno" placeholder="Buscar alumno…">
-        <label class="checkbox">
-          <input type="checkbox" id="solo-pendientes" checked>
-          Solo con pendientes
-        </label>
-        <span id="resumen-count" class="badge"></span>
+        <input type="search" id="search-alumno" placeholder="Buscar alumno…" autofocus>
       </div>
       <div id="pendientes-list" class="student-grid"></div>
-      <p class="empty-state" id="pendientes-empty" hidden>
-        Aún no hay alumnos registrados. Ve a la pestaña <strong>Asistencia</strong> para agregarlos.
+      <p class="empty-state" id="pendientes-empty">
+        Escribe un nombre para ver sus lecciones tomadas y pendientes.
       </p>
-    </section>
-
-    <!-- ASISTENCIA -->
-    <section id="tab-asistencia" class="panel">
-      <div class="toolbar">
-        <input type="text" id="nuevo-alumno" placeholder="Nombre del alumno">
-        <button id="btn-add-alumno" class="btn btn--primary">Agregar</button>
-        <button id="btn-bulk-toggle" class="btn">Agregar lista completa</button>
-      </div>
-
-      <div id="bulk-box" class="bulk-box" hidden>
-        <textarea id="bulk-textarea" rows="6" placeholder="Pega aquí un nombre por línea…"></textarea>
-        <div class="bulk-box__actions">
-          <button id="btn-bulk-confirm" class="btn btn--primary">Guardar lista</button>
-          <button id="btn-bulk-cancel" class="btn">Cancelar</button>
-        </div>
-      </div>
-
-      <div id="asistencia-list" class="student-list"></div>
-      <p class="empty-state" id="asistencia-empty" hidden>Agrega tu primer alumno arriba.</p>
-
-      <div class="data-actions">
-        <button id="btn-export" class="btn btn--ghost">Exportar datos</button>
-        <label class="btn btn--ghost">
-          Importar datos
-          <input type="file" id="btn-import" accept="application/json" hidden>
-        </label>
-      </div>
     </section>
 
     <!-- CALENDARIO -->
