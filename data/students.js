@@ -9,38 +9,38 @@
 
 const SEED_STUDENTS = {
   // 19 de junio — lecciones 1 y 2
-  "Gabriela Orellana": [1, 2, 9, 10],
+  "Gabriela Orellana": [1, 2, 9, 10, 17, 18, 19],
   "Julia Gomez": [1, 2, 3, 4],
-  "Luis Coyoy": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-  "Mia Orellana": [1, 2, 3, 4],
-  "Yasmin Lorenzo": [1, 2, 3, 4, 5, 6, 7, 8, 11, 12, 15, 16],
+  "Luis Coyoy": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 17, 18, 19],
+  "Mia Orellana": [1, 2, 3, 4, 17, 18, 19],
+  "Yasmin Lorenzo": [1, 2, 3, 4, 5, 6, 7, 8, 11, 12, 15, 16, 17, 18, 19],
 
   // 26 de junio — lecciones 3 y 4
   "Camila Orellana": [3, 4],
-  "Alisson Lorenzo": [3, 4, 5, 6, 7, 8, 11, 12, 13, 14, 15, 16],
+  "Alisson Lorenzo": [3, 4, 5, 6, 7, 8, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22],
   "Saida Monroy": [3, 4, 5, 6, 7, 8, 11, 12, 15, 16],
   "Elder Osorio": [3, 4],
   "Hassen Pinto": [3, 4, 5, 6, 7, 8, 11, 12, 15, 16],
   "Emanuel Ramirez": [3, 4],
   "Axel Lorenzo": [3, 4, 15, 16],
-  "Fredy Ramirez": [3, 4, 5, 6, 7, 8, 11, 12],
+  "Fredy Ramirez": [3, 4, 5, 6, 7, 8, 11, 12, 17, 18, 19, 20, 21, 22],
   "Rafael Choy": [3, 4],
   "Dayli Rojcho": [3, 4],
   "Telma Choc": [3, 4, 7, 8],
   "Kevin Choc": [3, 4, 7, 8],
   "Jose Ramirez": [3, 4, 5, 6, 7, 8, 11, 12],
-  "Miriam Coyoy": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 15, 16],
+  "Miriam Coyoy": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 15, 16, 17, 18, 19],
 
   // 3 de julio — lecciones 5 y 6
   "Melany Jimenez": [5, 6],
   "Alexander Boc": [5, 6, 7, 8, 9, 10, 11, 12, 15, 16],
   "Nefertiti Cua": [5, 6, 7, 8],
-  "Harry Cua": [5, 6],
+  "Harry Cua": [5, 6, 17, 18, 19],
 
   // 10 de julio — lecciones 7 y 8
   "Alejandro Sanchez": [7, 8],
   "Hector Mejia": [7, 8], // apellido poco legible ("Mejin"/"Mejía"), confirmar
-  "Eva Guaran": [7, 8, 11, 12],
+  "Eva Guaran": [7, 8, 11, 12, 17, 18, 19],
   "Jared Cua": [7, 8],
   "Ludwin Cuca": [7, 8, 9, 10, 11, 12, 15, 16],
   "Samuel Alvarez": [7, 8, 9, 10, 15, 16],
@@ -51,30 +51,47 @@ const SEED_STUDENTS = {
   "Leonardo Pineda": [7, 8],
 
   // 17 de julio — lecciones 9 y 10
-  "Fernando Tacam": [9, 10],
-  "Edwin Otoniel": [9, 10, 11, 12], // solo un nombre legible en el cuaderno
-  "Lilibeth Marroquin": [9, 10, 11, 12, 13, 14, 15, 16],
+  "Fernando Tacam": [9, 10, 17, 18, 19],
+  "Edwin Otoniel": [9, 10, 11, 12, 17, 18, 19], // solo un nombre legible en el cuaderno
+  "Lilibeth Marroquin": [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22],
 
   // 24 de julio — lecciones 11 y 12
   "Carlos Pelico": [11, 12],
 
+  // 14 de agosto — lecciones 20 a 22 (solo entregaron 3 alumnos)
+
   // 7 de agosto — lecciones 15 y 16
   "Hania Cacatzi": [15, 16],
   "Marisol Guarcas": [15, 16],
-  "Paola Lopez": [15, 16],
+  "Paola Lopez": [15, 16, 17, 18, 19],
   "Hugo Rojche": [15, 16],
   "Jefry Cubur": [15, 16],
   "Josue Perez": [15, 16],
   "Alejandro Mayca": [15, 16],
   "Byron Alarcon": [15, 16],
-  "Henry Rich": [15, 16],
+  "Henry Pich": [15, 16],
   "Londy Cuca": [15, 16],
   "Audri Santizo": [15, 16], // primer nombre poco legible, confirmar
-  "Anllelo Lorenzo": [15, 16],
+  "Anllelo Lorenzo": [15, 16, 17, 18, 19],
   "Erick Azurdia": [15, 16],
   "Jose Siquinajay": [15, 16],
   "Jose Suy": [15, 16],
   "Yeferson Siquinajay": [15, 16],
-  "Lindsey Per": [15, 16],
-  "Brayan Esquit": [15, 16],
+  "Lindsey Per": [15, 16, 17, 18, 19],
+  "Brayan Esquit": [15, 16, 17, 18, 19],
+
+  // 21 de agosto — lecciones 17, 18 y 19
+  "William Chicol": [17, 18, 19],
+  "Jaquelinne Tum": [17, 18, 19],
+  "Emily Tum": [17, 18, 19],
+  "Elaysa Ajpop": [17, 18, 19],
+  "Carolyn Ajpop": [17, 18, 19],
+  "Sharon Aju": [17, 18, 19],
+  "Fernando Tum": [17, 18, 19],
+  "Wilmar Juarez": [17, 18, 19],
+  "Edwin Sanic": [17, 18, 19],
+  "Moroni Ajpop": [17, 18, 19],
+  "Jasmin Gisimit": [17, 18, 19], // apellido poco legible, confirmar
+  "Marlon Sipac": [17, 18, 19],
+  "Erik Chuy": [17, 18, 19],
 };
