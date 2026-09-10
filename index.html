@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Familia Eterna · Centro JAS Chimaltenango</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <header class="hero">
+    <img class="hero__photo" src="assets/cristo.jpg" alt="" onerror="this.style.display='none'">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <div class="logo-badge">
+        <span class="logo-badge__top">CENTRO</span>
+        <span class="logo-badge__rule"></span>
+        <span class="logo-badge__main">JAS</span>
+        <span class="logo-badge__rule"></span>
+        <span class="logo-badge__bottom">CHIMALTENANGO</span>
+      </div>
+      <div class="hero__text">
+        <p class="hero__eyebrow">Seminario · Curso</p>
+        <h1>La Familia Eterna</h1>
+        <p class="hero__sub">Control de lecciones y asistencia de alumnos</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button class="tab active" data-tab="pendientes">Pendientes</button>
+    <button class="tab" data-tab="asistencia">Asistencia</button>
+    <button class="tab" data-tab="calendario">Calendario</button>
+  </nav>
+
+  <main class="content">
+
+    <!-- PENDIENTES -->
+    <section id="tab-pendientes" class="panel active">
+      <div class="toolbar">
+        <input type="search" id="search-alumno" placeholder="Buscar alumno…">
+        <label class="checkbox">
+          <input type="checkbox" id="solo-pendientes" checked>
+          Solo con pendientes
+        </label>
+        <span id="resumen-count" class="badge"></span>
+      </div>
+      <div id="pendientes-list" class="student-grid"></div>
+      <p class="empty-state" id="pendientes-empty" hidden>
+        Aún no hay alumnos registrados. Ve a la pestaña <strong>Asistencia</strong> para agregarlos.
+      </p>
+    </section>
+
+    <!-- ASISTENCIA -->
+    <section id="tab-asistencia" class="panel">
+      <div class="toolbar">
+        <input type="text" id="nuevo-alumno" placeholder="Nombre del alumno">
+        <button id="btn-add-alumno" class="btn btn--primary">Agregar</button>
+        <button id="btn-bulk-toggle" class="btn">Agregar lista completa</button>
+      </div>
+
+      <div id="bulk-box" class="bulk-box" hidden>
+        <textarea id="bulk-textarea" rows="6" placeholder="Pega aquí un nombre por línea…"></textarea>
+        <div class="bulk-box__actions">
+          <button id="btn-bulk-confirm" class="btn btn--primary">Guardar lista</button>
+          <button id="btn-bulk-cancel" class="btn">Cancelar</button>
+        </div>
+      </div>
+
+      <div id="asistencia-list" class="student-list"></div>
+      <p class="empty-state" id="asistencia-empty" hidden>Agrega tu primer alumno arriba.</p>
+
+      <div class="data-actions">
+        <button id="btn-export" class="btn btn--ghost">Exportar datos</button>
+        <label class="btn btn--ghost">
+          Importar datos
+          <input type="file" id="btn-import" accept="application/json" hidden>
+        </label>
+      </div>
+    </section>
+
+    <!-- CALENDARIO -->
+    <section id="tab-calendario" class="panel">
+      <p class="panel-intro">Fechas de clase y lecciones cubiertas en cada sesión.</p>
+      <div class="table-wrap">
+        <table class="calendar-table" id="calendar-table">
+          <thead>
+            <tr><th>Fecha</th><th>Lecciones</th><th>Nota</th></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="app-footer">Centro JAS Chimaltenango · La Familia Eterna</footer>
+</div>
+
+<script src="data/students.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
