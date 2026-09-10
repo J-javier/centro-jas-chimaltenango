@@ -222,7 +222,7 @@ body{
 /* ---------- STUDENT CARDS (pendientes) ---------- */
 .student-grid{
   display:grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr));
   gap: 18px;
 }
 .student-card{
@@ -363,4 +363,22 @@ body{
 @media (max-width: 560px){
   .tabs{ padding: 10px 10px 0; }
   .content{ padding: 18px 14px 30px; }
+  .tab{ font-size: 12.5px; padding: 10px 6px; }
+  .toolbar{ gap: 8px; }
+}
+
+@media (max-width: 420px){
+  .hero{ min-height: 260px; }
+  .hero__content{ padding: 24px 14px 22px; gap: 12px; }
+  .logo-badge{ width: 88px; height: 88px; }
+  .logo-badge__main{ font-size: 20px; }
+  .logo-badge__rule{ width: 46px; }
+  .hero__sub{ font-size: 13px; }
+  .student-card{ padding: 16px 14px 14px; }
+  .toolbar input[type="search"]{ flex-basis: 100%; }
+}
+
+@media (max-width: 340px){
+  .tabs{ gap: 2px; }
+  .tab{ font-size: 11.5px; padding: 9px 4px; }
 }
