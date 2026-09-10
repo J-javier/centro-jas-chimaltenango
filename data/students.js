@@ -9,7 +9,7 @@
 
 const SEED_STUDENTS = {
   // 19 de junio — lecciones 1 y 2
-  "Gabriela Orellana": [1, 2],
+  "Gabriela Orellana": [1, 2, 9, 10],
   "Julia Gomez": [1, 2, 3, 4],
   "Luis Coyoy": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
   "Mia Orellana": [1, 2, 3, 4],
@@ -33,7 +33,7 @@ const SEED_STUDENTS = {
 
   // 3 de julio — lecciones 5 y 6
   "Melany Jimenez": [5, 6],
-  "Alexander Boc": [5, 6, 7, 8],
+  "Alexander Boc": [5, 6, 7, 8, 9, 10],
   "Nefertiti Cua": [5, 6, 7, 8],
   "Harry Cua": [5, 6],
 
@@ -42,11 +42,16 @@ const SEED_STUDENTS = {
   "Hector Mejia": [7, 8], // apellido poco legible ("Mejin"/"Mejía"), confirmar
   "Eva Guaran": [7, 8], // nombre poco legible, confirmar
   "Jared Cua": [7, 8],
-  "Ludwin Cuca": [7, 8],
-  "Samuel Alvarez": [7, 8],
+  "Ludwin Cuca": [7, 8, 9, 10],
+  "Samuel Alvarez": [7, 8, 9, 10],
   "William Israel": [7, 8],
   "Yuliet Riz": [7, 8],
   "Benjamin Chojcholaj": [7, 8],
   "Carlos Reyes": [7, 8],
   "Leonardo Pineda": [7, 8],
+
+  // 17 de julio — lecciones 9 y 10
+  "Fernando Tacam": [9, 10],
+  "Edwin Otoniel": [9, 10], // solo un nombre legible en el cuaderno
+  "Lilibeth Marroquin": [9, 10],
 };
